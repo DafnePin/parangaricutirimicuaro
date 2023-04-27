@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="imagenes/calculadora.jpg" type="image/x-icon">
+    <title>Calculadora</title>
+</head>
+<body>
+    <div id="fondo1">
+        <h1>Calculadora</h1>
+        <p>Calculadora de opciones basicas</p>
+        <marquee>Hola mundo de JS HTML/Esta es una app que calcula/Debes ingresar dos numeros y pulsar guardar/Seguimos bajo mantenimiento/No hacemos otra operación que no sea sumar/Gracias por tomarnos en cuenta y usar nuestra pagina</marquee> <!--Crea la animacion del texto andando de der a izq-->
+        <hr>
+        <div>
+            <p>
+                <div id="datos">
+                    <p>
+                        <label id="num1" for="numero0"> Introduccion de un numero</label>
+                        <input type="text" id="numero0"/>
+                    </p>
+                    <p>
+                        <label id="num2" for="numero1">Introduce otro numero</label>
+                        <input type="text" id="numero1"/>
+                    </p>
+                </div>
+                <div>
+                    <p>
+                        <button class="bg-blue-200 p-2 m-4 rounded-md" onclick="suma()"> + </button>
+                        <button class="bg-blue-200 p-2 m-4 rounded-md" onclick="resta()"> - </button>
+                    </p>
+                    <p>
+                        <button class="bg-blue-200 p-2 m-4 rounded-md" onclick="multi()"> * </button>
+                        <button class="bg-blue-200 p-2 m-4 rounded-md" onclick="div()"> ÷ </button>
+                    </p>
+                    <p>
+                    <button class="bg-blue-200 p-2 m-4 rounded-md" onclick="expo()"> ^ </button>
+                    </p>
+                </div>
+            </p>
+        </div>
+        <div>
+            <p id="resultado">R: </p>
+        </div>
+    </div>
+    <script src="scripts/calculadora.js"></script>
+</body>
+</html>
