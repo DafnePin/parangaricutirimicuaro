@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practica DOM</title>
+</head>
+<body id="fondo">
+    <div id="minifondo">
+        <h1 id="titulo">Don't push</h1>
+        <p>Practicaremos con varios botones</p>
+        <hr>
+        <div>
+            <p>
+                <button id="boton-text" onclick="text()">Preciona para saludar</button>
+                <div>
+                    <p id="cambia"  style="display:inline;">BONITO DÍA</p>
+                    <p id="resultado"></p>
+                </div>
+            </p>
+        </div>
+        <hr>
+        <div id="resultado">
+            <button id="boton-fondo" onclick="fondo()" >Este espacio es muy blanco</button>
+        </div>
+        <hr>
+        <div>
+            <button id="boton-mensaje" onclick="mensaje()">No hagas click</button>
+        </div>
+        <hr>
+        <div>
+            <button id="boton-picabu" onclick="picabu()">...</button>
+        </div>
+        <script src="scripts/botones.js"></script>
+    </div>
+    
+</body>
+</html>
