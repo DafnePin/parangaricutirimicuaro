@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practica DOM</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1 id="titulo">Don't click</h1>
+        <h3>Practicaremos con varios botones</h3>
+        <hr>
+    </header>
+    <main>
+        <div id="main1">
+            <button id="boton-text" onclick="text()">Preciona para saludar</button>
+            <p id="cambia"  style="display:inline;">BONITO DÍA</p>
+        </div>
+        <div id="main2">
+            <button id="boton-fondo" onclick="fondo()" >Este espacio es muy blanco</button>
+        </div>
+        <div id="main3">
+            <button id="boton-mensaje" onclick="mensaje()">No hagas click</button>
+        </div>
+        <div id="main4">
+            <button id="boton-picabu" onclick="picabu()">Mostrar</button>
+            <div id="info" style="display: none;">
+                albion online es un mmorpg no lineal en el que escribes tu propia historia sin limitarte a seguir un camino prefijado, explora un amplio mundo abierto con cinco biomas unicos, todo cuanto hagas tendra su repercusíon en el mundo, con su economia orientada al jugador de albion los jugadores crean practicamente todo el equipo a partir de los recursos que consiguen, el equipo que llevas define quien eres, cambia de arma y armadura para pasar de caballero a mago o juego como una mezcla de ambas clases, aventurate en el mundo abierto y haz frente a los habitantes y las criaturas de albion, inicia expediciones o adentrate en mazmorras en las que encontraras enemigos aun mas dificiles, enfrentate a otros jugadores en encuentros en el mundo abierto, lucha por los territorios o por ciudades enteras en batallas tacticas, relajate en tu isla privada donde podras construir un hogar, cultivar cosechas, criar animales, unete a un gremio, todo es mejor cuando se trabaja en grupo [musica] adentrate ya en el mundo de albion y escribe tu propia historia.
+            </div>
+        </div>
+    </main>
+    <script src="scripts/botones.js"></script>
+</body>
+</html>
