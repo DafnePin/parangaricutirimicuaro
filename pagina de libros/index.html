@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de libros</title>
+    <style>
+        #errTitle{
+            font-style: italic;
+            color:red;
+        }
+        #errYear{
+            font-style: italic;
+            color:red;
+        }
+        #errAuthor{
+            font-style: italic;
+            color:red;
+        }
+    </style>
+</head>
+<body>
+    <header>
+
+    </header>
+    <main>
+        <form id="form" action="config.php" method="POST">
+            <div>
+                <label id="text">Titulo</label>
+                <p name="errTitle" id="errTitle"></p>
+                <input type="text" id="title" name="title" oninput="correct(this)" placeholder="Titulo del libro">
+            </div>
+            <div>
+                 <label>Año de publicación</label>
+                 <p name="errYear" id="errYear"></p>
+                 <input type="int" id="year" name="year" oninput="correct(this)" placeholder="Año">
+            </div>
+            <div>
+                <label>Autor</label>
+                <p name="errAuthor" id="errAuthor"></p>
+                <input type="text" id="author" name="author" oninput="correct(this)" placeholder="Nombre del Autor">
+            </div>
+            <div>
+                <button type="button" id="send" value="send" onclick="ok()">Guardar</button>
+            </div>
+        </form>
+        <script src="scripts/warr.js"></script>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+</html>
